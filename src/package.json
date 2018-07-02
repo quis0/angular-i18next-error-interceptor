@@ -1,0 +1,39 @@
+{
+    "name": "angular-i18next-error-interceptor",
+    "version": "0.1.0",
+    "homepage": "https://github.com/LCGroupIT/angular-i18next-error-interceptor#readme",
+    "author": {
+        "name": "Sergey Romanchuk"
+    },
+    "license": "MIT",
+    "description": "Angular 4+ localizable http error interceptor",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LCGroupIT/angular-i18next-error-interceptor.git"
+    },
+    "keywords": [
+        "api",
+        "angular",
+        "http",
+        "error handling",
+        "i18next"
+    ],
+    "bugs": {
+        "url": "https://github.com/LCGroupIT/angular-i18next-error-interceptor/issues"
+    },
+    "maintainers": [
+        {
+            "email": "rezety@gmail.com",
+            "name": "Sergey Romanchuk"
+        }
+    ],
+    "module": "angular-i18next-error-interceptor.es5.js",
+    "es2015": "angular-i18next-error-interceptor.js",
+    "typings": "angular-i18next-error-interceptor.d.ts",
+    "peerDependencies": {
+        "@angular/common": ">=4.0.0 <=7.0.0",
+        "@angular/core": ">=4.0.0 <=7.0.0",
+        "rxjs": ">=5.5.10 <=7.0.0",
+        "angular-i18next": "^4.0.0"
+    }
+}
