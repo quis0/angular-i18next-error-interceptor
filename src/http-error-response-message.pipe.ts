@@ -7,7 +7,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 export class HttpErrorResponseMessage implements PipeTransform {
     transform(httpErrorResp: HttpErrorResponse): string {
         if (!httpErrorResp || !httpErrorResp.error) {
-            return '';
+            return null;
         }
         return httpErrorResp.error.message;
     }

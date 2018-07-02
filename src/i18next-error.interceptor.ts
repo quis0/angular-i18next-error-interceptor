@@ -2,12 +2,13 @@ import { HttpErrorResponse, HttpEvent, HttpHandler, HttpInterceptor, HttpRequest
 import { Injectable, Injector } from '@angular/core';
 import { I18NEXT_SERVICE, ITranslationService } from 'angular-i18next';
 import { Observable } from 'rxjs';
+import { tap } from 'rxjs/operators';
+
 import { HTTP_STATUS_DICTIONARY } from './i18next-error.tokens';
 
 interface ILocalizedServerError {
     message?: string;
 }
-
 
 @Injectable()
 export class I18NextErrorInterceptor implements HttpInterceptor {
@@ -21,11 +22,13 @@ export class I18NextErrorInterceptor implements HttpInterceptor {
     }
 
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-        const nextHandle = next.handle(req);
-        nextHandle.subscribe(() => {}, (error: HttpErrorResponse) => {
-            return Observable.throw(this.HandleErrorMessage(error));
-        });
-        return nextHandle;
+        return next.handle(req).pipe(
+            tap((event: HttpEvent<any>) => {}, (err: any) => {
+                if (err instanceof HttpErrorResponse) {
+                    this.HandleErrorMessage(err);
+                }
+            })
+        );
     }
 
     private HandleErrorMessage(errorResponse: HttpErrorResponse): HttpErrorResponse {
