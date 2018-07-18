@@ -7,7 +7,7 @@ import { HttpErrorResponseMessage } from './http-error-response-message.pipe';
 
 export type Dic = { [key: string]: string };
 
-const DEFAULT_STATUS_KEYS: Dic  = {
+export const DEFAULT_STATUS_KEYS: Dic  = {
     400: 'http_error:validation_error',
     401: 'http_error:not_authorized',
     403: 'http_error:access_denied',
