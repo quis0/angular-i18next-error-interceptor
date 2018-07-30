@@ -1,6 +1,7 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import { Pipe, PipeTransform, Injectable } from '@angular/core';
 import { HttpErrorResponse } from '@angular/common/http';
 
+@Injectable()
 @Pipe({
     name: 'http-error-response-message',
 })
