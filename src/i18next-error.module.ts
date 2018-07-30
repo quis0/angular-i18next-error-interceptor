@@ -25,7 +25,9 @@ const declarations = [
     ],
     declarations: declarations,
     exports: declarations,
-    providers: []
+    providers: [
+        HttpErrorResponseMessage
+    ]
 })
 export class I18NextErrorInterceptorModule {
     static forRoot(httpStatusDictionary: Dic = null): ModuleWithProviders {
