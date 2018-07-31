@@ -3,7 +3,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 
 @Injectable()
 @Pipe({
-    name: 'http-error-response-message',
+    name: 'httpErrorResponseMessage',
 })
 export class HttpErrorResponseMessage implements PipeTransform {
     transform(httpErrorResp: HttpErrorResponse): string {
