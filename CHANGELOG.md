@@ -1,3 +1,13 @@
+<a name="0.1.5"></a>
+## 0.1.5 (2018-08-21)
+
+
+### Bug Fixes
+
+* json error ([debe12a](https://github.com/LCGroupIT/angular-i18next-error-interceptor/commit/debe12a))
+
+
+
 <a name="0.1.4"></a>
 ## 0.1.4 (2018-07-31)
 fix pipe name
