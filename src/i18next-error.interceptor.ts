@@ -47,10 +47,9 @@ export class I18NextErrorInterceptor implements HttpInterceptor {
         }
         catch (ex) {}
         // if object got message: server localized message by himself (no need to translate)
-        if (errorEntity && errorEntity.message) {
-            return errorResponse;
+        if (!(errorEntity && errorEntity.message)) {
+            errorEntity = { message: this.GetLocalizedStatusMessage(errorResponse.status) };
         }
-        errorEntity = { message: this.GetLocalizedStatusMessage(errorResponse.status) };
         // modify error response with client localized message
         return new HttpErrorResponse(
             Object.assign(errorResponse, { error: errorEntity })
