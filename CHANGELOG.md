@@ -1,3 +1,12 @@
+# [1.0.0](https://github.com/LCGroupIT/angular-i18next-error-interceptor/compare/v0.1.3...v1.0.0) (2018-12-03)
+
+
+### Bug Fixes
+
+* json error ([debe12a](https://github.com/LCGroupIT/angular-i18next-error-interceptor/commit/debe12a))
+
+
+
 <a name="0.1.5"></a>
 ## 0.1.5 (2018-08-21)
 
