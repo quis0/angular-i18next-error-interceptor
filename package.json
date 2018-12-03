@@ -1,6 +1,6 @@
 {
     "name": "angular-i18next-error-interceptor",
-    "version": "0.3.0-beta1",
+    "version": "0.1.5",
     "ngPackage": {
         "lib": {
             "entryFile": "src/index.ts"
@@ -22,11 +22,9 @@
     "scripts": {
         "karma": "npx karma",
         "rimraf": "npx rimraf",
-        "ngc": "npx ngc",
         "cpy": "npx cpy",
-        "rollup": "rollup",
         "build": "npx ng-packagr -p package.json",
-        "copy:assets": "npm run cpy -- \"**/*.*\" \"!**/*.js\" \"../dist\" --parents --cwd=build && npm run cpy -- src/package.json dist && npm run cpy -- README.md dist && npm run cpy -- CHANGELOG.md dist",
+        "copy:assets": "npm run cpy -- CHANGELOG.md dist",
         "conventional-changelog": "conventional-changelog",
         "changelog": "npm run conventional-changelog -- -p angular -i CHANGELOG.md -s",
         "clean:build": "npm run rimraf -- dist build",
@@ -45,7 +43,7 @@
     "peerDependencies": {
         "@angular/common": ">=6.0.0 <8.0.0",
         "@angular/core": ">=6.0.0 <8.0.0",
-        "angular-i18next": "5.0.0-beta3",
+        "angular-i18next": ">=4.0.0 <6.0.0",
         "rxjs": ">=6.2.0 <7.0.0"
     },
     "devDependencies": {
@@ -76,7 +74,6 @@
         "karma-sourcemap-loader": "^0.3.7",
         "karma-spec-reporter": "^0.0.32",
         "rimraf": "^2.6.2",
-        "rollup": "^0.67.3",
         "rxjs": "^6.3.3",
         "sinon": "^7.1.1",
         "tslint": "^5.11.0",
