@@ -1,3 +1,7 @@
+# [1.1.0](https://github.com/LCGroupIT/angular-i18next-error-interceptor/compare/v1.0.0...v1.1.0) (2019-03-05)
+
+
+
 # [1.0.0](https://github.com/LCGroupIT/angular-i18next-error-interceptor/compare/v0.1.3...v1.0.0) (2018-12-03)
 
 
