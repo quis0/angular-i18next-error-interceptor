@@ -1,3 +1,12 @@
+# [2.0.0](https://github.com/LCGroupIT/angular-i18next-error-interceptor/compare/v1.1.0...v2.0.0) (2019-06-05)
+
+
+### Bug Fixes
+
+* added Angular 8 support ([2ad3ee1](https://github.com/LCGroupIT/angular-i18next-error-interceptor/commit/2ad3ee1))
+
+
+
 # [1.1.0](https://github.com/LCGroupIT/angular-i18next-error-interceptor/compare/v1.0.0...v1.1.0) (2019-03-05)
 
 
