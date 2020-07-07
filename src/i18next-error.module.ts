@@ -30,7 +30,7 @@ const declarations = [
     ]
 })
 export class I18NextErrorInterceptorModule {
-    static forRoot(httpStatusDictionary: Dic = null): ModuleWithProviders {
+    static forRoot(httpStatusDictionary: Dic = null): ModuleWithProviders<I18NextErrorInterceptorModule> {
         return {
             ngModule: I18NextErrorInterceptorModule,
             providers: [

@@ -15,9 +15,9 @@
         "url": "git+https://github.com/LCGroupIT/angular-i18next-error-interceptor.git"
     },
     "license": "MIT",
-    "description": "Angular 6+ localizable http error interceptor",
+    "description": "Angular 10+ localizable http error interceptor",
     "engines": {
-        "node": "8.9.3"
+        "node": ">= 10.13.0"
     },
     "scripts": {
         "karma": "npx karma",
@@ -43,45 +43,46 @@
         "release": "npx np --contents=dist --yolo"
     },
     "peerDependencies": {
-        "@angular/common": ">=6.0.0 <9.0.0",
-        "@angular/core": ">=6.0.0 <9.0.0",
-        "angular-i18next": ">=4.0.0 <8.0.0",
-        "rxjs": ">=6.2.0 <7.0.0"
+        "@angular/common": ">=10.0.0 <11.0.0",
+        "@angular/core": ">=10.0.0 <11.0.0",
+        "angular-i18next": ">=10.0.0 <11.0.0",
+        "rxjs": ">=6.6.0 <7.0.0"
     },
     "devDependencies": {
-        "@angular/common": "^8.0.0",
-        "@angular/core": "^8.0.0",
-        "@angular/compiler": "^8.0.0",
-        "@angular/compiler-cli": "^8.0.0",
-        "@angular/platform-browser": "^8.0.0",
+        "@angular/common": "^10.0.2",
+        "@angular/core": "^10.0.2",
+        "@angular/compiler": "^10.0.2",
+        "@angular/compiler-cli": "^10.0.2",
+        "@angular/platform-browser": "^10.0.2",
         "@types/chai": "^4.1.7",
         "@types/i18next": "^12.1.0",
         "@types/jasmine": "^3.3.13",
         "@types/sinon": "^7.0.12",
-        "angular-i18next": "7.0.0",
-        "ng-packagr": "^5.2.0",
+        "angular-i18next": "10.0.0",
+        "ng-packagr": "^10.0.0",
+        "np": "^6.2.3",
         "chai": "^4.2.0",
         "codelyzer": "^5.1.0",
         "conventional-changelog-cli": "^2.0.21",
         "conventional-github-releaser": "^3.1.3",
         "coveralls": "^3.0.3",
         "cpy-cli": "^2.0.0",
-        "i18next": "^17.0.1",
+        "i18next": "^19.5.4",
         "jasmine": "^3.4.0",
         "jasmine-core": "^3.4.0",
-        "karma": "^4.1.0",
-        "karma-chrome-launcher": "^2.2.0",
-        "karma-coverage": "^1.1.2",
-        "karma-jasmine": "^2.0.1",
+        "karma": "4.4.1",
+        "karma-chrome-launcher": "^3.1.0",
+        "karma-coverage": "^2.0.1",
+        "karma-jasmine": "^3.1.1",
         "karma-sourcemap-loader": "^0.3.7",
         "karma-spec-reporter": "^0.0.32",
         "rimraf": "^2.6.3",
-        "rxjs": "^6.5.2",
+        "rxjs": "^6.6.0",
         "sinon": "^7.3.2",
-        "tslint": "^5.17.0",
+        "tslint": "^6.0.0",
         "typedoc": "^0.14.2",
-        "typescript": "~3.4.5",
-        "zone.js": "^0.9.1",
-        "tsickle": "^0.35.0"
+        "typescript": "^3.9.6",
+        "zone.js": "^0.10.2",
+        "tsickle": "^0.38.0"
     }
 }
