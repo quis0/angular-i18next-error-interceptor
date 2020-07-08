@@ -42,6 +42,9 @@
         "test:watch": "npm run clean:tests && karma start karma.conf.debug.js",
         "release": "npx np --contents=dist --yolo"
     },
+    "dependencies": {
+        "tslib": "^2.0.0"
+    },
     "peerDependencies": {
         "@angular/common": ">=10.0.0 <11.0.0",
         "@angular/core": ">=10.0.0 <11.0.0",
